@@ -1,0 +1,75 @@
+﻿<Page x:Class="TranslatorApp.Pages.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TranslatorApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="720"
+      Title="SettingsPage"
+      Background="#12a4d9">    
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Button x:Name="ExportDatabaseButton" 
+                    Content="Export database"
+                    Click="ExportDatabaseButton_Click"
+                    FontFamily="Consolas"
+                    FontSize="20"
+                    RenderTransformOrigin="0.727,0.417"
+                    Foreground="#e2d810"
+                    Background="#322e2f"
+                    MinHeight="50"
+                    MinWidth="480">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" 
+                                Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button x:Name="ImportDatabaseButton"
+                Content="Import database"
+                Click="ImportDatabaseButton_Click"
+                Width="210"
+                FontFamily="Consolas"
+                FontSize="20"
+                RenderTransformOrigin="0.727,0.417"
+                Foreground="#e2d810"
+                Background="#322e2f"
+                MinHeight="50"
+                MinWidth="480"
+                Margin="0,10,0,0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" 
+                                Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button x:Name="DeleteDatabaseButton"
+                Content="Delete database"
+                Click="DeleteDatabaseButton_Click"
+                Width="210"
+                FontFamily="Consolas"
+                FontSize="20"
+                RenderTransformOrigin="0.727,0.417"
+                Foreground="Black"
+                Background="#d9138a"
+                MinHeight="50"
+                MinWidth="480"
+                Margin="0,10,0,0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" 
+                                Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Page>
