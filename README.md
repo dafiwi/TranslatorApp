@@ -14,3 +14,5 @@ The database is empty from the start. You can enter your own words or import the
 which contains English words and their German translations.
 
 The source files are also included in a specific folder.
+
+If this program doesn't start on your computer, you have to allow to start it first for security reasons, if there is an option to do so.
